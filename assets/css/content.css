@@ -1,0 +1,51 @@
+/*-------------------------------------*\
+  #ABOUT ME
+\*--------------------------------------*/
+.container-fluid {
+    padding: 0 30px;
+    margin: auto;
+    text-align: center;
+    max-width: 1150px;
+}
+
+.about-us-wrapper img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: auto;
+    display: none;
+    float: left;
+    margin-right: 10px;
+}
+
+.about-us-wrapper {
+    color: var(--foreground-primary);
+    font-size: var(--fs-4);
+    background: var(--background-primary);
+    padding: 20px;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px hsla(0, 0%, 0%, 0.05);
+    transition: 0.25s ease;
+    column-count: 2;
+}
+
+.about-us-wrapper p {
+    text-align: justify;
+}
+
+
+/**
+ * responsive for larger than 1024px screen
+ */
+
+@media (min-width: 1024px) {
+
+    .about-us-wrapper img {
+        display: block;
+    }
+
+    .about-us-wrapper img {
+        margin-bottom: 10px;
+    }
+}
