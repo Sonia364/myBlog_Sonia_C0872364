@@ -1,20 +1,11 @@
 /*-------------------------------------*\
   #ABOUT ME
 \*--------------------------------------*/
-.container-fluid {
-    padding: 0 30px;
-    margin: auto;
-    text-align: center;
-    max-width: 1150px;
-}
-
 .about-us-wrapper img {
     width: 150px;
     height: 150px;
     object-fit: cover;
     margin: auto;
-    display: none;
-    float: left;
     margin-right: 10px;
 }
 
@@ -32,6 +23,37 @@
 
 .about-us-wrapper p {
     text-align: justify;
+    margin-bottom: 12px;    
+}
+.about-us-wrapper figure {
+    float: left;
+    display: none;
+  }
+  
+.about-us-wrapper figcaption {
+    display: table-caption;
+    caption-side: bottom;
+    font-size: 12px;
+    font-weight: 500;   
+  }
+
+@media (min-width: 650px){
+    .about-me .h2 {
+        position: relative;
+        text-align: left;
+        padding-left: 2rem;
+        margin-bottom: 2rem;
+    }
+    .about-me .h2::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: var(--action-primary);
+        width: 5px;
+        height: 100%;
+        border-radius: 5px;
+    }
 }
 
 
@@ -41,11 +63,14 @@
 
 @media (min-width: 1024px) {
 
-    .about-us-wrapper img {
-        display: block;
+    .about-us-wrapper figure {  
+        display: table;
     }
 
     .about-us-wrapper img {
         margin-bottom: 10px;
+    }
+    .main.about-main .container{
+        grid-template-columns: 6fr 1fr;
     }
 }
