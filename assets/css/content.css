@@ -59,13 +59,16 @@
 .content-table td {
     padding: 12px 15px;
 }
+.content-table td {
+    color: var(--foreground-primary);;
+}
 
 .content-table tbody tr {
     border-bottom: 1px solid #dddddd;
 }
 
 .content-table tbody td {
-    background-color: #f3f3f3;
+    background-color: var(--background-primary);
 }
 
 .content-table tbody tr:last-of-type {
