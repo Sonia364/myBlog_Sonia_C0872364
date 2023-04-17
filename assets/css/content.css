@@ -37,6 +37,24 @@
     font-weight: 500;   
   }
 
+/*-------------------------------------*\
+  #BLOG DETAILS
+\*--------------------------------------*/
+section#blog-slider {
+    background: linear-gradient(rgb(49 106 153), rgb(77 159 227));
+    height: 80px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+section#blog-slider h2 {
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
 @media (min-width: 650px){
     .about-me .h2 {
         position: relative;
@@ -72,5 +90,8 @@
     }
     .main.about-main .container{
         grid-template-columns: 6fr 1fr;
+    }
+    .main.blog-detail-main .container{
+        grid-template-columns: 2fr 5fr;
     }
 }
