@@ -23,21 +23,22 @@
 
 .about-us-wrapper p {
     text-align: justify;
-    margin-bottom: 12px;    
+    margin-bottom: 12px;
 }
+
 .about-us-wrapper figure {
     float: left;
     display: none;
-  }
-  
+}
+
 .about-us-wrapper figcaption {
     display: table-caption;
     caption-side: bottom;
     font-size: 12px;
-    font-weight: 500;   
-  }
+    font-weight: 500;
+}
 
-  .content-table {
+.content-table {
     border-collapse: collapse;
     margin: 25px 0;
     font-size: 0.9em;
@@ -45,44 +46,46 @@
     border-radius: 5px 5px 0 0;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-  }
-  
-  .content-table thead tr {
+}
+
+.content-table thead tr {
     background-color: #316a99;
     color: #ffffff;
     text-align: left;
     font-weight: bold;
-  }
-  
-  .content-table th,
-  .content-table td {
+}
+
+.content-table th,
+.content-table td {
     padding: 12px 15px;
-  }
-  
-  .content-table tbody tr {
+}
+
+.content-table tbody tr {
     border-bottom: 1px solid #dddddd;
-  }
-  
-  .content-table tbody td{
+}
+
+.content-table tbody td {
     background-color: #f3f3f3;
-  }
-  
-  .content-table tbody tr:last-of-type {
+}
+
+.content-table tbody tr:last-of-type {
     border-bottom: 2px solid #316a99;
-  }
-  
-  .content-table tbody tr.active-row {
+}
+
+.content-table tbody tr.active-row {
     font-weight: bold;
     color: #316a99;
-  }
-  .info-table{
+}
+
+.info-table {
     overflow-x: auto;
-  }
-  
-  .responsive-table{
+}
+
+.responsive-table {
     display: inline-block;
-    min-width: 100%;    
-  }
+    min-width: 100%;
+}
+
 /*-------------------------------------*\
   #BLOG DETAILS
 \*--------------------------------------*/
@@ -95,19 +98,21 @@ section#blog-slider {
     display: flex;
     justify-content: center;
 }
+
 section#blog-slider h2 {
     color: #fff;
     display: flex;
     align-items: center;
 }
 
-@media (min-width: 650px){
+@media (min-width: 650px) {
     .about-me .h2 {
         position: relative;
         text-align: left;
         padding-left: 2rem;
         margin-bottom: 2rem;
     }
+
     .about-me .h2::before {
         content: '';
         position: absolute;
@@ -127,17 +132,19 @@ section#blog-slider h2 {
 
 @media (min-width: 1024px) {
 
-    .about-us-wrapper figure {  
+    .about-us-wrapper figure {
         display: table;
     }
 
     .about-us-wrapper img {
         margin-bottom: 10px;
     }
-    .main.about-main .container{
+
+    .main.about-main .container {
         grid-template-columns: 6fr 1fr;
     }
-    .main.blog-detail-main .container{
+
+    .main.blog-detail-main .container {
         grid-template-columns: 2fr 5fr;
     }
 }
