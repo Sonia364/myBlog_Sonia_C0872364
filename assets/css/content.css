@@ -103,6 +103,11 @@ section#blog-slider h2 {
     color: #fff;
     display: flex;
     align-items: center;
+    padding: 10px;
+}
+.blog-detail-main .blog-text{
+    display: block;
+    color: var(--foreground-primary);
 }
 
 @media (min-width: 650px) {
